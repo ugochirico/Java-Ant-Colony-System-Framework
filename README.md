@@ -17,6 +17,15 @@ To apply JACSF to the Travel Salesman Problem I took the instance of ACS that Do
 
 I designed two concrete classes **Ant4TSP** and **AntColony4TSP**, derived respectively from the classes **Ant** and **AntColony**, which implement the transition and updating rules described above.
 
-## JACSF applied to Multicasting Problem in a network
+## JACSF applied to Multicasting Problem in a network (Stainer Problem on a Network)
+Multicasting in a network is the targeting of a single data packet to a selected set of receivers in the network. It is in opposition to traditional communication modes unicast and broadcast that are, respectively, one-to-one and one-to-all communications. 
+Considering the needs of efficiency, expressed in term of low delay during transmissions and limited bandwidth, solving the Multicasting Problem means generating a tree of nodes from the sender to the given set of clients which has the minimal cost in term of time and bandwidth.
+Because the Multicasting Problem in networks can be seen as an instance of Steiner Problem on a network, I used JACSF to solve it.
+
+I designed two classes **Ant4S**P and **AntColony4SP**, derived respectively from the **Ant4TSP** and **AntColony4TSP**. 
+I opted to derive from the classes designed for TSP because there are very few changes to do respect to the base classes. 
+The class **AntColony4SP** differs from **AntColony4TSP** in the method *globalUpdatingRule* and in the method createAnts in which it creates the ants. 
+The class **Ant4TSP** differs from **Ant4TSP** only in the method *end* because the *End of Activity Rule* must return true when all nodes has been covered
+
 
 
