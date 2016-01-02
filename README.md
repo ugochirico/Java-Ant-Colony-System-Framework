@@ -24,7 +24,7 @@ Because the Multicasting Problem in networks can be seen as an instance of Stein
 
 I designed two classes **Ant4S**P and **AntColony4SP**, derived respectively from the **Ant4TSP** and **AntColony4TSP**. 
 I opted to derive from the classes designed for TSP because there are very few changes to do respect to the base classes. 
-The class **AntColony4SP** differs from **AntColony4TSP** in the method *globalUpdatingRule* and in the method createAnts in which it creates the ants. 
+The class **AntColony4SP** differs from **AntColony4TSP** in the method *globalUpdatingRule* and in the method *createAnts* in which it creates the ants. 
 The class **Ant4TSP** differs from **Ant4TSP** only in the method *end* because the *End of Activity Rule* must return true when all nodes has been covered
 
 
