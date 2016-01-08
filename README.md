@@ -11,9 +11,9 @@ The framework is composed by three classes:
 
 -	**AntGraph**  is a class that implements the features of a graph specific for Ant Colony Systems. It supplies the values for the *cost measure δ(r, s)* and for the *desirability measure τ(r, s)* and gives a method to update the value *τ(r, s)*. Because the ants actually work in parallel they access asynchronously and unpredictably to the graph. To avoid that an ant tries to read from the graph while another are writing on, the accesses to AntGraph objects are synchronized by using the synchronization mechanism supplied by Java language.
 
-## JACSF applied on TSP
+## JACSF applied on Traveling Salesman Problem
 
-To apply JACSF to the Travel Salesman Problem I took the instance of ACS that Dorigo used in his work mentioned above and I implemented it using JACSF. 
+To apply JACSF to the Traveling Salesman Problem I took the instance of ACS that Dorigo used in his work mentioned above and I implemented it using JACSF. 
 
 I designed two concrete classes **Ant4TSP** and **AntColony4TSP**, derived respectively from the classes **Ant** and **AntColony**, which implement the transition and updating rules described above.
 
